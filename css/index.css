@@ -10,10 +10,9 @@
 body{
 	width: 100%;
 	min-width: 1400px;
-	/*max-width: 1600px;*/
+
 	margin: 0 auto;
 
-	/*background-color: #000;*/
 	font-family: "微软雅黑";
 	color: #fff;
 }
@@ -24,14 +23,10 @@ header.header{
 	width: 100%;
 	min-width: 1400px;
 
-	height: 80px;
+	height: 88px;
 
 	background-color: #013D61;
 	color: #fff;
-
-	/*position: fixed;*/
-    /*left: 0px;*/
-    /*top: 0px;*/
 
     z-index: 1;
 }
@@ -53,6 +48,8 @@ header>.header_bg{
 	cursor: pointer;
 
 	width: 240px;
+	position: relative;
+	top: -5px;
 }
 
 .logo img{
@@ -70,7 +67,7 @@ nav a{
 	float: left;
 
 	height: 100%;
-	line-height: 80px;
+	line-height: 88px;
 
 	width: 80px;
 	text-align: center;
@@ -104,7 +101,7 @@ nav a:hover {
 }
 
 
-/*轮播*/
+/*轮播区背景*/
 .banner{
 	width: 100%;
 	min-width: 1400px;
@@ -128,13 +125,15 @@ nav a:hover {
 /*左*/
 .banner .left{
 	position: absolute;
-	left: 50px;
+	left: 120px;
 
 	width: 100px;
 	/*margin-top: 100px;*/
 	top: 100px;
 
 	animation: top_ 1s linear 0s infinite alternate forwards;
+
+	/*background-image: url(../img/pic_1.png);*/
 }
 
 @keyframes top_{
@@ -148,9 +147,13 @@ nav a:hover {
 	}
 }
 
+.banner .left p{
+	margin-bottom: 10px;
+}
+
 .banner .right{
 	position: absolute;
-	right: 50px;
+	right: 120px;
 
 	width: 100px;
 	top: 100px;
@@ -159,8 +162,12 @@ nav a:hover {
 
 }
 
+.banner .right p{
+	margin-bottom: 10px;
+}
 
 
+/*轮播*/
 .banner .banner_bg{
 	width: 50%;
 	height: 100%;
@@ -197,7 +204,8 @@ nav a:hover {
 	color: #fff;
 	font-size: 24px;
 
-	border: 1px red solid;
+	/*border: 1px red solid;*/
+	/*background-color: #3cb371;*/
 }
 
 .banner ul li p{
@@ -207,6 +215,31 @@ nav a:hover {
 
 
 /*轮播结束*/
+
+
+/*内容开始*/
+.content{
+	/*height: 500px;*/
+	background-color: #3cb371;
+
+	/*text-align: center;*/
+	padding-bottom: 10px;
+}
+
+.content p{
+	width: 40%;
+	/*text-align: center;*/
+	margin: 0 auto;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+.content .suggest{
+	margin-top: 80px;
+}
+/*内容结束*/
+
+
 
 
 
