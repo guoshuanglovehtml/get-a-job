@@ -13,7 +13,7 @@ window.onload = function ()
     function  autoPlay(argument) 
     {   
     	num--;
-    	num<=-7200 ? num = 0 : num;
+    	num<=-8000 ? num = 0 : num;
         ul.style.left = num + "px";
     };
 
