@@ -103,9 +103,12 @@ nav a:hover {
 
 /*内容开始*/
 .content{
-	height: 280px;
-	border: 1px red solid;
+	height: 480px;
+	/*border: 1px red solid;*/
 	position: relative;
+	background-color: #000;
+	color: #fff;
+	/*margin-bottom: 6px;*/
 }
 
 .content .title{
@@ -114,31 +117,37 @@ nav a:hover {
 	/*position: relative;*/
 	/*left: 346px;*/
 
-	width: 50%;
+	width: 500px;
 	margin: 0 auto;
 
 	font-size: 20px;
+	color: #fff;
 
-	border: 1px red solid;
+	/*border: 1px red solid;*/
 }
 
 .content .content_news{
-	width: 50%;
-	height: 180px;
-	border: 1px red solid;
+	width: 800px;
+	height: 380px;
+	border-radius: 14px;
 	margin: 0 auto;
+    background-color:#fff;
+	position: relative;
+
+	overflow: hidden;
 }
 
-.content .contents{
-	width: 50%;
-	margin: 0 auto;
+.son{
+	position: absolute;
+	left : 800px;
 
-	height: 30px;
-	border: 1px red solid;
+	font-size: 24px;
+    width: 500px;
 
-	/*position: relative;*/
-	/*left: 356px;*/
+    /*border: 1px red solid;*/
 }
+
+
 /*内容结束*/
 
 

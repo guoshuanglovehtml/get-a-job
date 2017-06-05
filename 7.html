@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/7.css">
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+
+<!-- 导航 -->
+<header class="header">
+    <header class="header_bg">
+		<div class="logo"><img src="img/logo.jpg"></div>
+		<nav class="nav">
+			<a href="index.html">首&nbsp;页</a>
+			<a href="1.html">1</a>
+			<a href="2.html">2</a>
+			<a href="3.html">3</a>
+			<a href="4.html">4</a>
+			<a href="5.html">5</a>
+			<a href="6.html">6</a>
+			<a href="7.html" class="a_w">7</a>
+			<a href="8.html">8</a>
+			<a href="9.html">9</a>
+			<a href="10.html">10</a>
+
+		</nav>
+    </header>
+</header>
+<!-- 导航 结束 -->
+
+<div class="title">当代大学生就业的现状 问题 对策 调查</div>
+
+
+
+<!-- 自己的 -->
+<div class="banner">
+    <div class="liu_box">
+    	<div class="liu_text">
+    		<ul>
+    			<li>7. 你对就业地区的选择是
+    			<a href="#">[单选题]</a>
+    			</li>
+    			<li>A 留在学校所在城市</li>
+    			<li>B 回家乡所在的城市或地区</li>
+    			<li>C 出国或其他城市</li>
+    			<li>本次统计有效填写人数</li>
+    		</ul>
+    	</div>
+    	<div class="liu_7">
+    	<img src="img/7.0.png" class="liu_pic1">
+        </div>
+        <div class="liu_">
+    	<img src="img/7.1.png" class="liu_pic">
+        </div>
+      <div id="container" style="position:relative;top:100px;float:left;"></div>
+      <div class="liu_result">
+      	<ul>
+      	   <li>结论:</li>
+      	   <li id="result_hide">
+      	   	不难看出，大学生就业——选择回家乡所在的城市或地区的比重是最大的，占了66.52%；而留在学校所在城市占次之，占了19.74%；很少一部分选择出国或其他城市就业。
+      	   </li>
+      	</ul>
+      </div>
+     </div>
+     </div>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+    <script type="text/javascript" src="js/highcharts.js" ></script>
+    <script type="text/javascript">
+    	$(function () {
+		    $('#container').highcharts({
+		        chart: {
+		            plotBackgroundColor: null,
+		            plotBorderWidth: null,
+		            plotShadow: false
+		        },
+		        colors:['#F7C183','#EF7C78','#A593F7'],
+		        title: {
+		            text: '扇形图'
+		        },
+		        credits: {
+		            href:'',
+		            text:'',
+		            position:{
+		            	x:130,
+		            	y:120
+		            }
+		        },
+		        tooltip: {
+		            headerFormat: '{series.name}<br>',
+		            pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+		        },
+		        plotOptions: {
+		            pie: {
+		                allowPointSelect: true,
+		                cursor: 'pointer',
+		                dataLabels: {
+		                    enabled: false
+		                },
+		                showInLegend: true,
+		                center:[-400,150],
+		                borderWidth:0,
+		                startAngle:-135,
+		                innerSize:100,
+		                size:300,
+		                point:{
+		                    events:{
+		                        legendItemClick: function (e) {
+		                            return false;
+		                        }
+		                    }
+		                }
+		            }
+		        },
+		        series: [{
+		            type: 'pie',
+		            name: '数据统计',
+		            data: [
+		                ['返回家乡所在的城市或地区',66.52],
+		                ['留在学校所在城市', 19.74],
+		                ['出国或其他城市', 13.73]
+		               
+		            ]
+		        }],
+		        legend: {
+		            align:'left',
+		            layout:'vertical',
+		            x:300,
+		            y:-200,
+		            labelFormat:'{name}'+' {y:.2f}%',
+		            symbolRadius:0,
+		            symbolPadding:10,
+		            itemMarginBottom:10
+		        }
+		    });
+      //结论控制部分开始
+      var $appear1=$('#result_hide');
+      var $box=$('.liu_result');
+          $box.bind({
+        	mouseover:function (){
+        		$appear1.show();
+        	},mouseout:function (){
+        		$appear1.hide();
+        	}
+        });
+
+
+        
+
+
+		});
+
+    </script>
+<!-- 自己的 -->
+<!-- 底部 -->
+<footer class="footer">
+    <div class="footer_bg">
+    <img src="img/timg.jpg">
+
+    <p>黔ICP备12008866号广电节目制作许可证：1314号 &nbsp;&nbsp;&nbsp;贵州网</p>
+    <p>copyright &nbsp;&copy; 2005 - 2017 &nbsp;Lotour.com&nbsp;All&nbsp;Rights&nbsp;Riserved. 贵州师范学院 版权所有</p>
+
+    </div>
+	
+</footer>
+		
+
+</body>
+</html>

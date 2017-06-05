@@ -1,0 +1,259 @@
+*{
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+	text-decoration: none;
+}
+
+
+body{
+	width: 100%;
+	min-width: 1400px;
+	/*max-width: 1600px;*/
+	margin: 0 auto;
+
+	/*background-color: #000;*/
+	font-family: "微软雅黑";
+}
+
+
+/*头部开始*/
+header.header{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 80px;
+
+	background-color:#013D61;
+
+	position: fixed;
+    left: 0px;
+    top: 0px;
+
+    z-index: 1;
+}
+
+/*二层居中*/
+header>.header_bg{
+	width: 1200px;
+	margin: 0 auto;
+
+	height: 100%;
+	/*border: 1px red solid;*/
+}
+
+/*logo*/
+.header_bg>.logo{
+	height: 100%;
+	float: left;
+
+	cursor: pointer;
+
+	width: 240px;
+}
+
+.logo img{
+	height: 100%;
+	width: 100%;
+}
+
+/*导航*/
+.logo+nav.nav{
+	float: right;
+}
+
+nav a{
+	display: block;
+	float: left;
+	height: 100%;
+	line-height: 80px;
+	width: 80px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+nav .a_w{
+	background-color: rgb(254,160,5);
+	color: #fff;
+}
+
+/*nav a:hover {
+	color:white;
+	background-color: rgb(254,160,5);
+}*/
+
+/*头部结束*/
+
+
+.title{
+	margin-top: 80px;
+	height: 60px;
+	font-size: 25px;
+	line-height:60px;
+	text-align: center;
+}
+
+
+/*轮播*/
+.banner{
+	width: 100%;
+	min-width: 1400px;
+	height:700px;
+	position: relative;
+}
+/*7题样式开始*/
+.liu_box{
+	width: 1100px;
+	height:700px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.liu_text{
+	height: 150px;
+	/*width:250px;*/
+	/*background: red;*/
+	float: left;
+	margin-top:30px;
+}
+.liu_text li{
+	margin-top:10px;
+	font-weight: bold;
+	position: relative;
+}
+.liu_text li:nth-child(1){
+	    color:red;
+	    font-weight: bold;
+}
+.liu_text li:nth-child(2){
+	    
+        animation:li2 3s linear 0s infinite 
+        alternate forwards; 
+}
+@-webkit-keyframes li2{
+        0%{
+            left:-100px;
+        }
+        
+        100%{
+            left:100px;
+            
+        }
+    }
+    .liu_text li:nth-child(4){
+	    
+        animation:li4 3s linear 0s infinite 
+        alternate forwards; 
+}
+@-webkit-keyframes li4{
+        0%{
+            left:100px;
+        }
+        100%{
+            left:-100px;
+        }
+    }
+    .liu_text li:nth-child(3){
+	    
+        animation:li3 3s linear 0s infinite 
+        alternate forwards; 
+}
+@-webkit-keyframes li3{
+        0%{
+            opacity: 0.1;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .banner .liu_7{
+    	height: 150px;
+    	float: left;
+    	margin-top:50px;
+    	
+    	position: relative;
+    	animation:pic7 3s linear 0s 1 
+        alternate forwards;
+    }
+    .banner .liu_{
+    	height:200px;
+    	float: left;
+    	position: relative;
+    	
+    	
+    	
+    }
+    .liu_pic{
+    	position: relative;
+    	animation:pic7 3s linear 0s 1 
+        alternate forwards;
+    }
+    @-webkit-keyframes pic7{
+        0%{
+            top:200px;
+        }
+        100%{
+            top:0;
+        }
+    }
+    .liu_pic{
+    	height: 100%;
+    	width: 100%;
+    }
+    .liu_pic:hover{
+    	transform:scale(1.5,1.5);
+    	transition:all 1s ease 0s;
+    }
+    #container:hover{
+        transform:scale(1.5);
+        transition:all 1s ease 0s;
+    }
+    .liu_result{
+    	height:400px;
+    	width: 500px;
+    	position: absolute;
+    	bottom: 0;
+    	right: 0;
+        background-color:#000;
+    	/*background-color:transparent;*/
+    	
+    }
+    .liu_result li{
+    	color: #fff;
+    	font-size: 36px;
+    	cursor:pointer;
+    }
+   #result_hide{
+   	display: none;
+   }
+/*底部*/
+footer{
+	width: 100%;
+	min-width: 1400px;
+	height: 100px;
+
+	background-color: #222;
+}
+footer .footer_bg{
+	margin: 0 auto;
+	width: 52%;
+	height: 100px;
+}
+
+.footer_bg img{
+	height: 100%;
+	float: left;
+	margin-right: 60px;
+}
+
+.footer_bg p{
+	/*float: left;*/
+	color: #fff;
+	margin-left: 100px;
+	font-size: 14px;
+	
+	position: relative;
+	top: 34px;
+}

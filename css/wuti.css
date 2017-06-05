@@ -1,0 +1,289 @@
+*{
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+	text-decoration: none;
+}
+
+
+body{
+	width: 100%;
+	min-width: 1400px;
+	/*max-width: 1600px;*/
+	margin: 0 auto;
+
+	/*background-color: #000;*/
+	font-family: "微软雅黑";
+}
+
+
+/*头部开始*/
+header.header{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 80px;
+
+	background-color: #013D61;
+
+	position: fixed;
+    left: 0px;
+    top: 0px;
+
+    z-index: 1;
+}
+
+/*二层居中*/
+header>.header_bg{
+	width: 1200px;
+	margin: 0 auto;
+
+	height: 100%;
+	/*border: 1px red solid;*/
+}
+
+/*logo*/
+.header_bg>.logo{
+	height: 100%;
+	float: left;
+
+	cursor: pointer;
+
+	width: 240px;
+}
+
+.logo img{
+	height: 100%;
+	width: 100%;
+}
+
+/*导航*/
+.logo+nav.nav{
+	float: right;
+}
+
+nav a{
+	display: block;
+	float: left;
+
+	height: 100%;
+	line-height: 80px;
+
+	width: 80px;
+	text-align: center;
+
+	color: #fff;
+	font-size: 20px;
+}
+
+nav .a_w{
+	background-color: rgb(254,160,5);
+	color: #fff;
+}
+
+nav a:hover {
+	background-color: rgb(254,160,5);
+}
+
+/*头部结束*/
+
+
+.title{
+	margin-top: 80px;
+
+	height: 60px;
+	line-height:60px;
+	text-align: center;
+}
+
+
+/*轮播*/
+.wen_banner{
+	width: 100%;
+	min-width: 1400px;
+	height: 1100px;
+	position: relative;
+
+}
+.wen_banner .kuang{
+	width: 1100px;
+	height:1100px;
+	margin: 0 auto;
+	background-color: lightgray;
+	border-left:1px solid #000; 
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.wen_banner .kuang .tongji{
+	height: 50px;
+	width: 100%;	
+	float: left;
+	border: 1px solid #000;
+}
+
+.wen_banner .kuang .tongji p{
+	line-height: 50px;
+	width: 380px;
+	border-right: 1px solid #000;
+	font-size: 12px;
+	color: black;
+	float: left;
+	
+}
+.wen_banner .kuang .tongji span{
+	line-height: 50px;
+	font-size: 25px;
+	color: red;
+	float: left;
+	margin-left: 20px;
+} 
+.wen_banner .kuang .first{
+	width: 100%;
+	height: 304px;
+	float: left;
+	border-bottom:1px solid #000;
+
+}
+.wen_banner .kuang .first ul{
+	width: 380px;
+	height: 304px;
+	border-right: 1px solid #000;
+	float: left;
+	
+}
+.wen_banner .kuang .first ul li{
+	width: 100%;
+	height: 50px;
+	float: left;
+	margin-left: 10px;
+	line-height: 50px;
+	font-size: 13px;
+   
+}
+
+.tubiao{
+	width: 716px;
+	height: 304px;
+	float: left;
+}
+.wen_banner .kuang .socend{
+	width: 100%;
+	height: 450px;
+	float: left;
+	border-bottom: 1px solid #000;
+}
+.miaosu{
+	position: relative;
+	font-size: 20px;
+	top:20px;
+	color: red;
+	border:1px solid red;
+}
+.chart{
+	width: 500px;
+	height: 380px;
+	position: relative;
+	top: 500px;
+	left: 0px;
+	border:1px solid red;	
+ animation: port 1s linear 0s 1 both;
+}
+@-webkit-keyframes port{
+       0%{
+       bottom: 0px;
+       opacity: 0;     
+      }
+
+      100%{
+      top: 30px;
+      opacity: 1;
+     
+    }
+}
+.chart-a{
+	width: 580px;
+	height: 250px;
+    float: right;
+    position: relative;
+    top: -300px;
+    border:1px solid red;
+    animation: ports 1s linear 0s 1 both;
+}
+@-webkit-keyframes ports{
+       0%{
+       top: 0px;
+       opacity: 0;     
+      }
+
+      100%{
+      bottom: 900px;
+      opacity: 1;
+     
+    }
+}
+.bingzhuntu{
+	float:right;
+	color: red;
+	margin-top: -10px;
+	font-size: 20px;
+	margin-right: 450px;
+}
+
+.wen_banner .kuang .trid{
+	width: 100%;
+	height: 290px;
+	float: left;
+
+
+}
+.wen_banner .kuang .trid ul{
+	width: 900px;
+	height: 290px;
+	margin:0 auto;
+
+}
+.wen_banner .kuang .trid ul li{
+	width: 100%;
+	height: 30px;
+	float: left;
+	font-size: 22px;
+	line-height: 30px;
+	color: red;
+}
+
+
+
+
+/*底部*/
+footer{
+	width: 100%;
+	min-width: 1400px;
+
+	height: 100px;
+
+	background-color: #222;
+}
+
+footer .footer_bg{
+	margin: 0 auto;
+	width: 52%;
+	height: 100px;
+}
+
+.footer_bg img{
+	height: 100%;
+	float: left;
+	margin-right: 60px;
+}
+
+.footer_bg p{
+	/*float: left;*/
+	color: #fff;
+
+	margin-left: 100px;
+	font-size: 14px;
+	
+	position: relative;
+	top: 34px;
+}
