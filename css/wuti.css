@@ -146,7 +146,7 @@ nav a:hover {
 
 }
 .wen_banner .kuang .first ul{
-	width: 380px;
+	width: 381px;
 	height: 304px;
 	border-right: 1px solid #000;
 	float: left;
@@ -163,9 +163,13 @@ nav a:hover {
 }
 
 .tubiao{
-	width: 716px;
-	height: 304px;
+	width: 620px;
+	height: 240px;
 	float: left;
+	margin: 0 auto;
+
+	margin-left: 40px;
+	margin-top: 30px;
 }
 .wen_banner .kuang .socend{
 	width: 100%;
