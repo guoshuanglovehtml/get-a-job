@@ -50,13 +50,13 @@ window.onload = function ()
     		step += 0.1;
     	    son.style.left = son.offsetLeft - step + "px";
 
-    	    if (son.offsetLeft <= 0) 
+    	    if (son.offsetLeft <= 0+offsetWidth) 
     	    {
     	    	clearInterval(son.timer);
                 content.removeChild(son);
     	    }
 
-    	},30);
+    	},60);
 
     }
     
